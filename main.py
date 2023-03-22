@@ -6,9 +6,6 @@ import string
 import sqlite3
 
 
-
-
-
 def generator(length, numbersFlag, symbolsFlag): #password generator function
     if length.isdigit() and int(length) < 1000:    
         length = int(length)
@@ -53,8 +50,6 @@ def generator(length, numbersFlag, symbolsFlag): #password generator function
     else:
         userInput.delete(0, tkinter.END)
         userInput.insert(0, 'ENTER DIGIT ONLY!')
-
-
 
 
 class Database: #sqlite3 handling
